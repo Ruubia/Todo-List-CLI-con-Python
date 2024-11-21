@@ -1,0 +1,96 @@
+body {
+  height: 100vh;
+  font-family: 'Courier Prime', Courier, monospace;
+  margin: 0;
+  background-color: #f8f8f8; /* Color de fondo general */
+  background-image: url('../img/pexels-katerina-holmes-5905441.jpg'); /* Ruta de la imagen de fondo */
+  background-size: cover; /* Para que la imagen cubra toda la pantalla */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Para que no se repita la imagen */
+}
+
+/* Contenedor del post-it */
+.todo-container {
+  position: relative;
+  max-width: 600px;
+  width: 100%;
+  margin: 50px auto;
+  padding: 20px 30px;
+  background: #fffa8d; /* Fondo amarillo típico de los post-its */
+  border: 2px solid #f0e44e; /* Borde más suave con un color amarillento */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada para dar efecto 3D */
+  transform: rotate(-5deg); /* Le da un efecto de rotación como si estuviera ligeramente inclinado */
+}
+
+/* Título principal */
+h1 {
+  text-align: center;
+  font-size: 32px;
+  color: #5d4037; /* Color marrón */
+  margin-bottom: 20px;
+}
+
+/* Estilo del input */
+.add-todo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.new-todo {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  font-size: 18px;
+  background: #fff; 
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Lista de tareas */
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.no-tasks {
+  text-align: center;
+  color: #9e9e9e;
+  font-style: italic;
+  padding: 10px;
+  font-size: 16px;
+}
+
+/* Estilo de los ítems */
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+  font-size: 18px;
+  color: #333; /* Color del texto de la tarea */
+}
+
+/* Efecto hover */
+.todo-item:hover .delete-btn {
+  opacity: 1;
+}
+
+/* Botón de eliminación */
+.delete-btn {
+  background: none;
+  border: none;
+  color: #e91e63;
+  font-size: 18px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Cambio de color del botón al pasar el ratón */
+.delete-btn:hover {
+  color: #ff4081;
+}
